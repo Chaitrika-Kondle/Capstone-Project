@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url('https://images.unsplash.com/photo-1529539795054-3c162aab037a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9naW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+                background-size: cover;
+            }
+            form{
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                height: 350px;
+                width: 300px;
+                background-color: rgb(45, 122, 122);
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="\signupSubmit" method="post">
+            <h1><%=message%></h1>
+            <center><h1>Sign Up form</h1></center>
+           <center><label>Name:</label>
+            <input type = "text" name = "name" id = "name"><br><br></center>
+            <center><label>Email:</label>
+            <input type = "email" name = "email" id  = "email"><br><br></center>
+            <center><label>Password:</label>
+            <input type = "password" name = "password" id ="password"></center><br><br>
+            <center><input type="submit"value="Submit"></center>
+        </form>
+    </body>
+    </html>

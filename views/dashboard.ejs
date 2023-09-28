@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEATHER WEB PAGE</title>
+    <style>
+      body{
+      background-image:url('https://images.unsplash.com/photo-1464039397811-476f652a343b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1168&q=80');
+      background-size:cover;
+        }
+      h1{
+        color:floralwhite;
+      }
+      p{
+        color:black;
+      }
+      .location{
+        position:absolute;
+        top:200px;
+        margin-left:650px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="/dashboard">
+    <h1><center>Weather Application</center></h1>
+      <div class="location">
+      <h1> Hey,Biophile!!<br>come on check on the weather condition.... </h1>
+    <input type="text" name="loc" placeholder="Enter the location">  
+      <br>
+      <br>
+    <button>SUBMIT</button>
+        <p> Temperature: <%=open%></p>
+      </div>
+    </form>
+  </body>
+</html>

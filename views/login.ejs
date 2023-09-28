@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url('https://media.istockphoto.com/id/638149354/photo/modern-keyboard-wih-blue-log-in-button.webp?b=1&s=170667a&w=0&k=20&c=4iwVOdUYnBJ6s-IE_8Ko-ZsEOsHBr2xhnkdPLIgZ1ms=');
+                background-size: cover;
+            }
+            form{
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                height: 270px;
+                width: 300px;
+                background-color: rgb(117, 153, 170);
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/loginSubmit" method="post">
+            <center><h1>Login form</h1></center>
+            <center><label>Name:</label>
+            <input type = "text" name = "name" id = "name"><br><br></center>
+            <center><label>Email:</label>
+            <input type="email"name=email id="email"><br><br></center>
+            <center><label>Password:</label>
+            <input type="password"name=password id="password"></center><br><br>
+            <center><input type="submit" value="Submit"></center>
+        </form>
+    </body>
+    </html>
